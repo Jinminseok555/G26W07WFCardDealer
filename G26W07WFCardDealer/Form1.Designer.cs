@@ -29,6 +29,7 @@
             Card3 = new PictureBox();
             Card4 = new PictureBox();
             Card5 = new PictureBox();
+            btnSimulate = new Button();
             ((System.ComponentModel.ISupportInitialize)Card1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Card2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Card3).BeginInit();
@@ -101,11 +102,22 @@
             Card5.TabIndex = 5;
             Card5.TabStop = false;
             // 
+            // btnSimulate
+            // 
+            btnSimulate.Location = new Point(973, 470);
+            btnSimulate.Name = "btnSimulate";
+            btnSimulate.Size = new Size(131, 40);
+            btnSimulate.TabIndex = 6;
+            btnSimulate.Text = "확률 실험 버튼";
+            btnSimulate.UseVisualStyleBackColor = true;
+            btnSimulate.Click += OnSimulate;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1550, 540);
+            Controls.Add(btnSimulate);
             Controls.Add(Card5);
             Controls.Add(Card4);
             Controls.Add(Card3);
@@ -131,5 +143,6 @@
         private PictureBox Card3;
         private PictureBox Card4;
         private PictureBox Card5;
+        private Button btnSimulate;
     }
 }

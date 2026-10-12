@@ -1,5 +1,6 @@
 
 using System;
+using System.Linq;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -47,6 +48,59 @@ namespace G26W07WFCardDealer {
 
             // 4. 판별 결과 표시
             MessageBox.Show($"포커 족보: {GetRankName(rank)}");
+        }
+
+        private void OnSimulate(object sender, EventArgs e) {
+            int totalTrials = 10000;
+
+            // 모든 족보의 카운트를 0으로 초기화
+            Dictionary<PokerHandRank, int> counts =
+                new Dictionary<PokerHandRank, int>();
+
+            foreach (PokerHandRank rank in
+                Enum.GetValues(typeof(PokerHandRank))) {
+                counts[rank] = 0;
+            }
+
+            // 카드 분배와 족보 판별을 반복
+            for (int i = 0; i < totalTrials; i++) {
+                List<PlayingCard> cards = game.DealHand();
+
+                PokerHandRank rank = evaluator.Evaluate(cards);
+
+                counts[rank]++;
+            }
+
+            // 결과 정리
+            string result = $"총 실험 횟수: {totalTrials:N0}회\n\n";
+
+            foreach (PokerHandRank rank in
+                Enum.GetValues(typeof(PokerHandRank))) {
+                int count = counts[rank];
+                double probability =
+                    (double)count / totalTrials * 100;
+
+                result += $"{GetRankName(rank),-15} " +
+                          $"{count,6:N0}회  " +
+                          $"{probability,7:F3}%\n";
+            }
+
+            MessageBox.Show(
+                result,
+                "포커 족보 확률 실험 결과");
+
+            // 출현 횟수가 많은 족보부터 정렬
+            foreach (var item in counts.OrderByDescending(x => x.Value)) {
+                PokerHandRank rank = item.Key;
+                int count = item.Value;
+
+                double probability =
+                    (double)count / totalTrials * 100;
+
+                result += $"{GetRankName(rank),-15} " +
+                          $"{count,6:N0}회  " +
+                          $"{probability,7:F3}%\n";
+            }
         }
 
         private string GetRankName(PokerHandRank rank) {
