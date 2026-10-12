@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|c:\\users\\jms89\\source\\repos\\g26w07wfcarddealer\\g26w07wfcarddealer\\pokerhandrank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|solutionrelative:g26w07wfcarddealer\\pokerhandrank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|c:\\users\\jms89\\source\\repos\\g26w07wfcarddealer\\g26w07wfcarddealer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|solutionrelative:g26w07wfcarddealer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|c:\\users\\jms89\\source\\repos\\g26w07wfcarddealer\\g26w07wfcarddealer\\pokerhandevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|solutionrelative:g26w07wfcarddealer\\pokerhandevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37C5C0DD-0A06-0F07-FB7F-55A535E97866}|G26W07WFCardDealer\\G26W07WFCardDealer.csproj|C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\g26w07wfcarddealer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,46 +46,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "PokerHandEvaluator.cs",
+              "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerHandEvaluator.cs",
+              "RelativeDocumentMoniker": "G26W07WFCardDealer\\PokerHandEvaluator.cs",
+              "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerHandEvaluator.cs",
+              "RelativeToolTip": "G26W07WFCardDealer\\PokerHandEvaluator.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAIwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T05:29:24.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PokerHandRank.cs",
+              "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerHandRank.cs",
+              "RelativeDocumentMoniker": "G26W07WFCardDealer\\PokerHandRank.cs",
+              "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerHandRank.cs*",
+              "RelativeToolTip": "G26W07WFCardDealer\\PokerHandRank.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T05:28:15.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PokerGame.cs",
               "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerGame.cs",
               "RelativeDocumentMoniker": "G26W07WFCardDealer\\PokerGame.cs",
               "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PokerGame.cs",
               "RelativeToolTip": "G26W07WFCardDealer\\PokerGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T04:48:33.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PlayingCard.cs",
               "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PlayingCard.cs",
               "RelativeDocumentMoniker": "G26W07WFCardDealer\\PlayingCard.cs",
               "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\PlayingCard.cs",
               "RelativeToolTip": "G26W07WFCardDealer\\PlayingCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T04:47:35.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\Form1.cs",
               "RelativeDocumentMoniker": "G26W07WFCardDealer\\Form1.cs",
               "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\Form1.cs",
               "RelativeToolTip": "G26W07WFCardDealer\\Form1.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwCcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T01:39:36.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\Form1.cs",
               "RelativeDocumentMoniker": "G26W07WFCardDealer\\Form1.cs",
@@ -89,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "G26W07WFCardDealer\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\jms89\\source\\repos\\G26W07WFCardDealer\\G26W07WFCardDealer\\Form1.Designer.cs",
               "RelativeToolTip": "G26W07WFCardDealer\\Form1.Designer.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwF8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAUwFkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T04:05:28.341Z",
               "EditorCaption": ""
