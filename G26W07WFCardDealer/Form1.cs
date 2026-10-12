@@ -1,30 +1,40 @@
+
+using System;
+using System.Drawing;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
 namespace G26W07WFCardDealer {
     public partial class Form1 : Form {
+        private readonly PokerGame game = new PokerGame();
+        private PictureBox[] cardBoxes;
+
         public Form1() {
             InitializeComponent();
+
+            cardBoxes = new PictureBox[]
+            {
+                Card1, Card2, Card3, Card4, Card5
+            };
         }
+
         private void OnDeal(object sender, EventArgs e) {
-            string[] suits = ["spades", "hearts", "diamonds", "clubs"];
-            string[] values = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"];
+            List<PlayingCard> cards = game.DealHand();
 
-            Random random = new Random();
-            int card = random.Next(suits.Length * values.Length);
+            for (int i = 0; i < cards.Count; i++) {
+                string resourceName = cards[i].ResourceName;
 
-            string suit = suits[card / values.Length];
-            string value = values[card % values.Length];
+                Image image = Properties.Resources.ResourceManager
+                    .GetObject(resourceName) as Image;
 
-            if (value == "jack" || value == "queen" || value == "king") {
-                suit += "2";
+                if (image == null) {
+                    MessageBox.Show(
+                        $"이미지를 찾을 수 없습니다: {resourceName}");
+                    return;
+                }
+
+                cardBoxes[i].Image = image;
             }
-            // if (value is "jack" or "queen" or "king") {
-            //    suit += "2";
-            //} 이거는 is or 사용 가능
-
-            Card1.Image = Properties.Resources
-                .ResourceManager
-                .GetObject($"{value}_of_{suit}")
-                as Image;
         }
     }
 }
-
