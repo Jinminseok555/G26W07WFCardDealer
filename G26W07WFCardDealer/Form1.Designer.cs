@@ -23,12 +23,49 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            components = new System.ComponentModel.Container();
+            Card1 = new PictureBox();
+            btnDeal = new Button();
+            ((System.ComponentModel.ISupportInitialize)Card1).BeginInit();
+            SuspendLayout();
+            // 
+            // Card1
+            // 
+            Card1.Image = Properties.Resources.red_joker;
+            Card1.Location = new Point(14, 14);
+            Card1.Margin = new Padding(4);
+            Card1.Name = "Card1";
+            Card1.Size = new Size(307, 431);
+            Card1.SizeMode = PictureBoxSizeMode.Zoom;
+            Card1.TabIndex = 0;
+            Card1.TabStop = false;
+            // 
+            // btnDeal
+            // 
+            btnDeal.Location = new Point(14, 452);
+            btnDeal.Name = "btnDeal";
+            btnDeal.Size = new Size(307, 76);
+            btnDeal.TabIndex = 1;
+            btnDeal.Text = "카드분배";
+            btnDeal.UseVisualStyleBackColor = true;
+            btnDeal.Click += OnDeal;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(336, 540);
+            Controls.Add(btnDeal);
+            Controls.Add(Card1);
+            Margin = new Padding(4);
+            Name = "Form1";
+            Text = "카드딜러";
+            ((System.ComponentModel.ISupportInitialize)Card1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox Card1;
+        private Button btnDeal;
     }
 }

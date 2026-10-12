@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("G26W07WFCardDealer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ec368577896a58089db2acc845ffa6e21d409b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437b3351dcc69b67846f538afe28eb7e3c6d5426")]
 [assembly: System.Reflection.AssemblyProductAttribute("G26W07WFCardDealer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("G26W07WFCardDealer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "G26W07WFCardDealer/1.0.0": {
+        "runtime": {
+          "G26W07WFCardDealer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "G26W07WFCardDealer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
