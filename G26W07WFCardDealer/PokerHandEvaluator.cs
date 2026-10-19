@@ -4,12 +4,24 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace G26W07WFCardDealer {
+
     public class PokerHandEvaluator {
+
         public PokerHandRank Evaluate(List<PlayingCard> cards) {
             // 카드가 정확히 5장인지 확인
             if (cards == null || cards.Count != 5) {
                 throw new ArgumentException(
                     "포커 족보 판별에는 카드 5장이 필요합니다.");
+            }
+
+            // 중복된 카드가 있는지 확인
+            bool hasDuplicateCard = cards
+                .GroupBy(card => new { card.Suit, card.Value })
+                .Any(group => group.Count() > 1);
+
+            if (hasDuplicateCard) {
+                throw new ArgumentException(
+                    "중복된 카드는 사용할 수 없습니다.");
             }
 
             // 각 숫자가 몇 장씩 있는지 계산
@@ -29,56 +41,48 @@ namespace G26W07WFCardDealer {
             bool isFlush = cards
                 .All(card => card.Suit == cards[0].Suit);
 
-            // 스트레이트인지 확인
+            //=======================
+            // 포커 족보 판별
+            //=======================
             bool isStraight = IsStraight(values);
 
-            // 1. 로열 플러시
             if (isFlush && values.SequenceEqual(
                 new List<int> { 1, 10, 11, 12, 13 })) {
                 return PokerHandRank.RoyalFlush;
             }
 
-            // 2. 스트레이트 플러시
             if (isFlush && isStraight) {
                 return PokerHandRank.StraightFlush;
             }
 
-            // 3. 포카드
             if (counts[0] == 4) {
                 return PokerHandRank.FourOfAKind;
             }
 
-            // 4. 풀하우스
             if (counts[0] == 3 && counts[1] == 2) {
                 return PokerHandRank.FullHouse;
             }
 
-            // 5. 플러시
             if (isFlush) {
                 return PokerHandRank.Flush;
             }
 
-            // 6. 스트레이트
             if (isStraight) {
                 return PokerHandRank.Straight;
             }
 
-            // 7. 트리플
             if (counts[0] == 3) {
                 return PokerHandRank.ThreeOfAKind;
             }
 
-            // 8. 투 페어
             if (counts[0] == 2 && counts[1] == 2) {
                 return PokerHandRank.TwoPair;
             }
 
-            // 9. 원 페어
             if (counts[0] == 2) {
                 return PokerHandRank.OnePair;
             }
 
-            // 10. 하이 카드
             return PokerHandRank.HighCard;
         }
 

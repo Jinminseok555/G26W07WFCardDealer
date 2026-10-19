@@ -3,7 +3,6 @@
     public struct PlayingCard {
         public string Suit { get; }
         public string Value { get; }
-
         public PlayingCard(string suit, string value) {
             Suit = suit;
             Value = value;
